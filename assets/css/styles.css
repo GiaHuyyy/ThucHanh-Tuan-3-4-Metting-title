@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: sans-serif,  arial, helvetica;
+    font-family: sans-serif, arial, helvetica;
 }
 
 .web {
@@ -20,6 +20,10 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.content {
+    padding: 38px 40px;
 }
 
 /* Navigation */
@@ -49,7 +53,7 @@ a {
     padding-bottom: 0;
 }
 
-.navbar .list li{
+.navbar .list li {
     position: relative;
 }
 
@@ -74,10 +78,6 @@ a {
 .body {
     width: 60%;
     border-right: 1px solid #ececef;
-}
-
-.body .content {
-    padding: 36px 40px;
 }
 
 .body .row {
@@ -115,7 +115,7 @@ a {
     align-items: center;
 }
 
-.body .row-data-time a{
+.body .row-data-time a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,4 +258,192 @@ a {
     border-radius: 4px;
     line-height: 32px;
     font-size: 22px;
+}
+
+/* Participants & Chat */
+.participants-chat {
+    width: calc(100% - 67.9% - 32px);
+}
+
+.participants .heading {
+    position: relative;
+    font-size: 24px;
+}
+
+.number-participants::after {
+    position: absolute;
+    display: block;
+    content: "4";
+    width: 22px;
+    height: 26px;
+    font-size: 13px;
+    font-weight: 100;
+    border-radius: 40%;
+    background: #fdf2f4;
+    color: var(--primary-color);
+    text-align: center;
+    line-height: 26px;
+    top: 1px;
+    right: -26px;
+}
+
+.participants .row-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.participants .add {
+    width: 73px;
+    height: 36px;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.participants .add span:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.participants .list-participants {
+    margin: 32px 0 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.participants .row-person {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.participants .user-join {
+    display: flex;
+    align-items: center;
+}
+
+.participants .user-join span {
+    margin-left: 8px;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+}
+
+.participants .actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.participants .actions span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 22px;
+    letter-spacing: -1.2px;
+    font-weight: 600;
+    color: #818997;
+    text-align: center;
+    line-height: 9px;
+}
+
+.participants-chat .chat {
+    padding-top: 40px;
+    border-top: 1px solid rgb(236, 236, 239);
+}
+
+.chat .heading {
+    font-size: 24px;
+}
+
+.chat .list {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.chat .conversation {
+    margin-top: 42px;
+}
+
+.chat .conversation .item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.chat .conversation .name {
+    margin-left: 18px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #444953;
+    letter-spacing: 0.4px;
+}
+
+.chat .conversation .time {
+    margin-left: 14px;
+    color: #aaaeb5;
+    font-size: 12px;
+    /* font-weight: 600; */
+}
+
+.chat .conversation .desc {
+    margin-left: 52px;
+    background-color: #f8f9fa;
+    padding: 10px 10px;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+    border-radius: 2px;
+}
+
+.chat .icon-chat {
+    /* margin-left: 76px; */
+    margin-left: 85px;
+    width: 98px;
+    height: 54px;
+}
+
+.chat .box {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.chat .text-chat {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-radius: 4px;
+    background: #f3f4f6;
+}
+
+.chat .text-chat input {
+    padding: 11px 82px 11px 14px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #f3f4f6;
+}
+
+.chat .text-chat input::placeholder {
+    color: #cacccf;
+    letter-spacing: 0.5px;
+}
+
+.chat .text-chat i {
+    margin-right: 12px;
+    color: #000;
+}
+
+.chat .box .send {
+    margin-left: 18px;
 }
