@@ -154,7 +154,7 @@ a {
 
 .img-center {
     margin-top: 24px;
-    background-image: url("./assets/img/img_big.png");
+    background-repeat: no-repeat;
     height: 470px;
     border-top: 13px solid #f3f5f7;
     border-radius: 8px;
