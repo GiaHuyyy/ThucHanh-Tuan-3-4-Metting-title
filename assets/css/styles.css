@@ -112,6 +112,7 @@ a {
 .body .row-data-time {
     margin-top: 25px;
     display: flex;
+    align-items: center;
 }
 
 .body .row-data-time a{
@@ -120,7 +121,6 @@ a {
     justify-content: center;
     width: 82px;
     height: 28px;
-    /* line-height: 26px; */
     background-color: var(--primary-color);
     border-radius: 999px;
     color: #fff;
@@ -142,17 +142,120 @@ a {
     outline: none;
     margin-left: 18px;
     font-size: 15px;
+    display: block;
 }
 
-.body .row-data-time input {
+.border-right {
+    margin-left: 17px;
+    width: 2px;
+    height: 14px;
+    background: #e0e2e4;
+}
+
+.img-center {
+    margin-top: 24px;
+    background-image: url("/assets/img/img_big.png");
+    height: 470px;
+    border-top: 13px solid #f3f5f7;
+    border-radius: 8px;
+}
+
+.body .speaker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 23px 0;
+}
+
+.body .speaker .name {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    background: #757679;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #dbdde2;
+}
+
+.body .marker-green {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #1dd75b;
+    margin-right: 6px;
+}
+
+.body .list {
+    margin-top: 24px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body .list img {
+    border-radius: 8px;
+}
+
+.body .list .list-item {
     position: relative;
 }
 
-.border-right::after {
+.body .speaker-support {
+    display: flex;
+    align-items: center;
     position: absolute;
+    top: 8px;
+    margin: 0 8px;
+}
+
+.body .speaker-support .name {
+    display: flex;
+    align-items: center;
+    background: rgba(55, 58, 60, 0.6);
+    padding: 6px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #ced0d4;
+    white-space: nowrap;
+}
+
+.body .speaker-support .images {
+    margin-left: calc(100% - 8px);
+}
+
+.body .speaker-support img {
+    width: 28px;
+    height: 28px;
+}
+
+.body .list-button {
+    margin-top: 22px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+}
+
+.body .button-end {
     display: inline-block;
-    content: "";
-    width: 2px;
-    height: 8px;
-    background: red;
+    text-align: center;
+    width: 128px;
+    height: 44px;
+    background-color: #f22128;
+    color: #dbdde2;
+    line-height: 44px;
+    border-radius: 4px;
+}
+
+.body .button-other {
+    display: inline-block;
+    text-align: center;
+    width: 43px;
+    height: 43px;
+    color: #f2f2f3;
+    background-color: #9095a0;
+    border-radius: 4px;
+    line-height: 32px;
+    font-size: 22px;
 }
